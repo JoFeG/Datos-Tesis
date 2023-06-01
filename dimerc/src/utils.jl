@@ -13,6 +13,8 @@ function jsonpoints2arrays(points::JSON3.Array,include_time=false)
 end
 
 function seriesjson2matrix(points::JSON3.Array)
+    # Constructs a matrix Y of (m × n) with series in the columns and 0s replaced over gaps.
+    
     n = length(json)
     series = []
     xs = []
