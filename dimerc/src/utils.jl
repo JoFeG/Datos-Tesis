@@ -50,7 +50,6 @@ end
 
 
 using Statistics: mean
-
 function moving_average(y, hw)
     m = length(y)
     ŷ = zeros(m)
@@ -66,7 +65,6 @@ function moving_average(y, hw)
     
     return ŷ
 end
-
 
 function exponential_smoothing(y, α)
     m = length(y)
