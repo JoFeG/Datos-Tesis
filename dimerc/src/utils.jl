@@ -12,6 +12,7 @@ function jsonpoints2arrays(points::JSON3.Array,include_time=false)
     return x, y
 end
 
+
 function seriesjson2matrix(points::JSON3.Array)
     # Constructs a matrix Y of (m × n) with series in the columns and 0s replaced over gaps.
     
@@ -47,6 +48,7 @@ function seriesjson2matrix(points::JSON3.Array)
     return Y, min_x
 end
 
+
 using Statistics: mean
 
 function moving_average(y, hw)
@@ -64,6 +66,7 @@ function moving_average(y, hw)
     
     return ŷ
 end
+
 
 function exponential_smoothing(y, α)
     m = length(y)
