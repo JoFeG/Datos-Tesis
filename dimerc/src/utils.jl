@@ -66,6 +66,7 @@ function moving_average(y, hw)
     return ŷ
 end
 
+
 function exponential_smoothing(y, α)
     m = length(y)
     ŷ = zeros(m)
