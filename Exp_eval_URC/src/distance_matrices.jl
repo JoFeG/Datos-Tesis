@@ -19,8 +19,13 @@ function calculate_distance_matrices_euc(
     return TRAIN_dist_mat_euc, TEST_dist_mat_euc
 end
 
+
+
 #### REVISAR ESTA IMPLEMENTACION DE DTW !!! (Y ALTERNATIVAS EN EL MISMO PAQUETE)
 #### TIRA WARNINGS POR EL PyPlot QUE YA NO SIGUE EN JULIA... OTROS PROBLEMAS?
+#### Estos ahora son derechamente errores, hay que arreglar!...
+#### Y recalcular las matrices!
+#=
 import TimeWarp as tw
 
 function calculate_distance_matrices_dtw(
@@ -56,3 +61,4 @@ function calculate_distance_matrices_dtw(
     
     return TRAIN_dist_mat_dtw, TEST_dist_mat_dtw
 end
+=#

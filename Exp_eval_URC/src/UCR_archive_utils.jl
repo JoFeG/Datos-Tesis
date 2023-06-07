@@ -5,9 +5,10 @@
 function LoadDataSumary()
     url="https://www.cs.ucr.edu/~eamonn/time_series_data_2018/DataSummary.csv"
     DataSumary, DataSumary_header = readdlm(download(url), ',', header = true)
-    DataSumary_header[[1,4,5]] = ["ID", "Train", "Test"] # Original names "\ufeffID", "Train ", "Test " for some reason
+    # Original names "\ufeffID", "Train ", "Test " for some reason
+    DataSumary_header[[1,4,5]] = ["ID", "Train", "Test"] 
     
-    DataSumary_df = identity.(DataFrame(DataSumary, vec(DataSumary_header)))
+    DataSumary_df = DataFrame(DataSumary, vec(DataSumary_header))
     
     return DataSumary_df
 end
