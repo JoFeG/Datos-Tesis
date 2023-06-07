@@ -1,0 +1,18 @@
+module ExpEval
+    
+    using DelimitedFiles
+    using DataFrames
+    using Distances
+    
+    #### REVISAR ESTA IMPLEMENTACION DE DTW !!! (Y ALTERNATIVAS EN EL MISMO PAQUETE)
+    import TimeWarp as tw
+    
+    export LoadDataSumary,
+           LoadDataBase,
+           calculate_distance_matrices_euc
+           calculate_distance_matrices_dtw
+    
+    include("UCR_archive_utils.jl")
+    include("distance_matrices.jl")
+
+end
