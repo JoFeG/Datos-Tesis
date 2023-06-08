@@ -5,6 +5,10 @@ El notebook `Datos.ipynb` tiene solo la llamada (en python) al csv antiguo, dato
 
 El notebook `mrsat_API_load.ipynb` llama al servicio REST para curvas y grafica (en Julia).
 
+El notebook `mrsat_geo_plots.ipynb` tiene ejemplos de carga y visualización de `*.geojson` en Julia. Incluyendo las áreas agregadas via DVScan. 
+
+En la carpeta docs está los documentos con reglas y criterios para la agregació de los datos de la tabla `data/mrst_hist.csv` segú áreas.
+
 ---
 
 ## Servicio REST para Curvas
