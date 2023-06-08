@@ -3,7 +3,9 @@ module ExpEval
     using DelimitedFiles
     using DataFrames
     using Distances
-    
+    using Downloads
+    # using ZipFile
+
 
     
     export LoadDataSumary,

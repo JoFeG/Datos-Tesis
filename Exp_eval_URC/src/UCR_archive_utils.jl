@@ -2,6 +2,18 @@
 #     Basic utils to interact with the archive     #
 ####################################################
 
+function DownloadData()    
+    path = "./UCRArchive_2018/"
+    if isdir("path")
+        println("./UCRArchive_2018 directory already exist")
+    else
+        archive_url = "https://www.cs.ucr.edu/~eamonn/time_series_data_2018/UCRArchive_2018.zip"
+        cp(Downloads.download(archive_url), ".\UCRArchive_2018.zip")
+        println("Unizip archive using pasword: \"someone\"")
+        
+    end
+end
+    
 function LoadDataSumary()
     url="https://www.cs.ucr.edu/~eamonn/time_series_data_2018/DataSummary.csv"
     DataSumary, DataSumary_header = readdlm(download(url), ',', header = true)
