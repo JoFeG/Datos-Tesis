@@ -10,7 +10,7 @@ module ExpEval
     
     export LoadDataSumary,
            LoadDataBase,
-           calculate_distance_matrices_euc,
+           calculate_distance_matrices_euc#,
            # calculate_distance_matrices_dtw
     
     include("UCR_archive_utils.jl")
